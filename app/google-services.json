@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "784742582740",
+    "firebase_url": "https://augustines-30b16.firebaseio.com",
+    "project_id": "augustines-30b16",
+    "storage_bucket": "augustines-30b16.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:784742582740:android:ab6715ded8732ec9",
+        "android_client_info": {
+          "package_name": "coderoly.augustine"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "784742582740-s4nob8asvi7boes1jpqigvgmcfgqhh1o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "coderoly.augustine",
+            "certificate_hash": "BF82C0954BFA5084BFBEF40D33F4912A8CE6867B"
+          }
+        },
+        {
+          "client_id": "784742582740-i2uarm9mq00sb8dfv29bidsfi8rlsoiu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTa0jrvljwxA_GyQXDdNd9T9buUb7ZeJM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "784742582740-i2uarm9mq00sb8dfv29bidsfi8rlsoiu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

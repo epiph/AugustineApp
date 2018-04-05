@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        android:elevation="400dp"
+        app:cardCornerRadius="3dp"
+>
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="344dp"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="0dp">
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/img_ActiveChats_picContainer"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+
+                android:elevation="10dp"
+                app:cardCornerRadius="30dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/img_ActiveChats_pic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+
+
+                    />
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:id="@+id/tv_ActiveChats_username"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+
+                android:layout_marginStart="16dp"
+                android:fontFamily="sans-serif"
+
+                android:lines="1"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/tv_ActiveChats_message"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintLeft_toRightOf="@+id/img_ActiveChats_picContainer"
+                app:layout_constraintRight_toLeftOf="@+id/tv_ActiveChats_time"
+                app:layout_constraintTop_toTopOf="@+id/img_ActiveChats_picContainer" />
+
+            <TextView
+                android:id="@+id/tv_ActiveChats_message"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginStart="24dp"
+                android:fontFamily="monospace"
+
+                android:lines="1"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="@+id/img_ActiveChats_picContainer"
+                app:layout_constraintLeft_toRightOf="@+id/img_ActiveChats_picContainer"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_ActiveChats_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="8dp"
+
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:lines="1"
+                app:layout_constraintBottom_toTopOf="@+id/tv_ActiveChats_message"
+                app:layout_constraintRight_toRightOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,130 @@
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        tools:context="coderoly.augustine.homepage.Tab1_Notifs">
+
+
+        <!-- TODO: Update blank fragment layout -->
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="5">
+
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_PendingFriends"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                app:cardCornerRadius="10dp"
+                android:elevation="4dp"
+                android:orientation="vertical"
+
+                android:layout_margin="2dp" >
+
+                <TextView
+                    android:id="@+id/text_PendingFriends"
+                    android:textColor="@color/colorAccent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Pending Friends"
+                    android:textAlignment="center" />
+
+                <ListView
+                    android:id="@+id/list_PendingFriends"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/pendingFriendList"></ListView>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_ActiveChats"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                app:cardCornerRadius="10dp"
+                android:elevation="4dp"
+                android:orientation="vertical"
+
+
+                android:layout_margin="2dp">
+
+                <TextView
+                    android:id="@+id/text_ActiveChats"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/colorAccent"
+                    android:text="Active Chats"
+                    android:textAlignment="center" />
+
+                <ListView
+                    android:id="@+id/list_ActiveChats"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                </ListView>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_ApprovedFriends"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                app:cardCornerRadius="10dp"
+                android:elevation="4dp"
+                android:orientation="vertical"
+
+                android:layout_margin="2dp" >
+
+                <TextView
+                    android:id="@+id/text_ApprovedFriends"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="My Friends"
+                    android:textColor="@color/colorAccent"
+                    android:textAlignment="center" />
+
+                <ListView
+                    android:id="@+id/list_ApprovedFriends"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/Friends">
+
+                </ListView>
+
+            </android.support.v7.widget.CardView>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparentLessBlack"
+            android:src="@android:drawable/ic_input_add"
+
+            android:id="@+id/floatingActionButton"
+
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
